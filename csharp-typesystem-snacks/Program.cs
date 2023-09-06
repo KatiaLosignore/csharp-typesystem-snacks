@@ -119,3 +119,29 @@ if (!invitoFesta)
 }
 
 Console.WriteLine("------------------------------------------------------");
+// Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+int[] arrayVuoto = new int[6];
+int index = 0;
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("Inserisci un numero per 6 volte!");
+    int numUtente = int.Parse(Console.ReadLine());
+
+    // verifico se il numero è dispari
+    if (numUtente % 2 != 0)
+    {
+        arrayVuoto[index] = numUtente;   // aggiungo il numero dispari all'array vuoto
+        index++;
+    }
+}
+
+Console.WriteLine("I numeri dispari inseriti sono: ");
+
+for (int i = 0; i < index; i++)
+{
+    Console.WriteLine(arrayVuoto[i]);
+}
+
+Console.WriteLine("------------------------------------------------------");
