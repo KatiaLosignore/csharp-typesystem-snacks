@@ -72,7 +72,7 @@ for (int i = 0; i < numeri.Length; i++)
     somma += numeri[i];
 }
 
-float mediaNumeri = somma / numeri.Length;
+float mediaNumeri = (float)somma / numeri.Length;
 
 Console.WriteLine($"La somma dei numeri è: {somma}");
 
@@ -164,3 +164,28 @@ for (int i = 0; i < arrayInteri.Length; i++)
 Console.WriteLine($"La somma degli elementi che sono in posizione dispari è: {sommaDispari}");
 
 Console.WriteLine("------------------------------------------------------");
+// Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
+
+int[] arrayNumeri = new int[49];
+int sommaNum = 0;
+int ind = 0;
+
+for (int i = 0; i < 50; i++)
+{
+    Console.WriteLine("Inserisci un numero: ");
+    int numero = int.Parse(Console.ReadLine());
+    sommaNum += numero;
+
+    if (sommaNum < 50)
+    {
+        arrayNumeri[ind] = numero;
+        ind++;
+    } else
+    {
+        Console.WriteLine($"Non puoi più inserire numeri perchè hai raggiunto il limite massimo di 50!");
+        break;
+    }
+
+}
+
+
