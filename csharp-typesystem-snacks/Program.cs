@@ -22,3 +22,27 @@ if (numero1 > numero2)
 {
     Console.WriteLine($"Il secondo numero è maggiore: {numero2}");
 }
+
+
+// Snack 2 : L’utente inserisce due parole in successione. Il software stampa prima la parola più corta, poi la parola più lunga.
+
+Console.WriteLine("Inserisci la prima parola:");
+
+string parola1 = Console.ReadLine();
+
+Console.WriteLine("Inserisci la seconda parola:");
+
+string parola2 = Console.ReadLine();
+
+if (parola1.Length < parola2.Length)
+{
+    Console.WriteLine($"La parola più corta è {parola1}");
+    Console.WriteLine($"La parola più lunga è {parola2}");
+} else if (parola1.Length == parola2.Length)
+{
+    Console.WriteLine($"Le due parole hanno la stessa lunghezza");
+} else
+{
+    Console.WriteLine($"La parola più corta è {parola2}");
+    Console.WriteLine($"La parola più lunga è {parola1}");
+}
