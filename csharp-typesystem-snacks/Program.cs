@@ -188,4 +188,25 @@ for (int i = 0; i < 50; i++)
 
 }
 
+Console.WriteLine("------------------------------------------------------");
+// Snack 10: Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
 
+Console.WriteLine("Inserisci un numero: ");
+int N = int.Parse(Console.ReadLine());
+
+Random random = new Random();
+
+for (int i = 0; i < N; i++)
+{
+    int[] array = new int[10];
+
+    for (int j = 0; j < 10; j++)
+    {
+        array[j] = random.Next(1, 100);
+    }
+
+    foreach (int num in array)
+    {
+        Console.WriteLine($"{num};");
+    }
+}
