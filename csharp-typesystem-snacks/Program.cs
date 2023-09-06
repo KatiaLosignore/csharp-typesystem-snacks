@@ -76,6 +76,21 @@ float mediaNumeri = somma / numeri.Length;
 
 Console.WriteLine($"La somma dei numeri è: {somma}");
 
-Console.WriteLine($"la media dei numeri è: {mediaNumeri}");
+Console.WriteLine($"La media dei numeri è: {mediaNumeri}");
+
+Console.WriteLine("------------------------------------------------------");
+// Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.WriteLine("Inserisci un numero:");
+
+int numInserito = int.Parse(Console.ReadLine());
+
+if (numInserito % 2 == 0)
+{
+    Console.WriteLine($"Hai inserito un numero pari: {numInserito}");
+} else 
+{
+    Console.WriteLine($"Hai inserito un numero dispari. Il numero successivo è: {numInserito + 1}");
+}
 
 Console.WriteLine("------------------------------------------------------");
