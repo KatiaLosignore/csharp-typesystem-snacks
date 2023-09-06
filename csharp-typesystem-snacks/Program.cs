@@ -94,3 +94,28 @@ if (numInserito % 2 == 0)
 }
 
 Console.WriteLine("------------------------------------------------------");
+// Snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] invitatiGatsby = { "Luciano", "Paolo", "Luca", "Silvana", "Valeria", "Laura" , "Gianni"};
+
+Console.WriteLine("Inserisci il tuo nome:");
+
+string nomeUtente = Console.ReadLine();
+
+bool invitoFesta = false;
+
+foreach (string invitato in invitatiGatsby)
+{
+    if (nomeUtente == invitato)
+    {
+        Console.WriteLine("Benvenuto alla festa del grande Gatsby!");
+        invitoFesta = true;
+    }
+}
+
+if (!invitoFesta)
+{
+    Console.WriteLine("Mi dispiace non sei nella lista degli invitati alla festa del grande Gatsby!");
+}
+
+Console.WriteLine("------------------------------------------------------");
