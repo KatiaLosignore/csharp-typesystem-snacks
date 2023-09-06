@@ -202,11 +202,10 @@ for (int i = 0; i < N; i++)
 
     for (int j = 0; j < 10; j++)
     {
-        array[j] = random.Next(1, 100);
+        array[j] = random.Next(1, 101);  // Genera un numero casuale da 1 a 100
+        Console.Write(array[j] + " ");
     }
 
-    foreach (int num in array)
-    {
-        Console.WriteLine($"{num};");
-    }
+    Console.WriteLine();
+    
 }
