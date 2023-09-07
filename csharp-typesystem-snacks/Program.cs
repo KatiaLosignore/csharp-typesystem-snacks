@@ -182,7 +182,7 @@ for (int i = 0; i < 50; i++)
         ind++;
     } else
     {
-        Console.WriteLine($"Non puoi più inserire numeri perchè hai raggiunto il limite massimo di 50!");
+        Console.WriteLine($"Non puoi più inserire numeri perchè hai raggiunto il limite massimo di 50! La tua somma raggiunta è : {sommaNum}");
         break;
     }
 
