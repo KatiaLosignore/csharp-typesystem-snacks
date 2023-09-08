@@ -110,6 +110,7 @@ foreach (string invitato in invitatiGatsby)
     {
         Console.WriteLine("Benvenuto alla festa del grande Gatsby!");
         invitoFesta = true;
+        break;
     }
 }
 
